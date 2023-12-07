@@ -3,6 +3,8 @@ import os
 
 
 class Pytime:
+    
+    @staticmethod
     def calcAverageExec(self, func, args, its=0):
         tot = 0
         for i in range(its):
@@ -14,13 +16,15 @@ class Pytime:
             tot += (b-a)
         os.system("cls")
         self.getResult(tot, its)
-        
+    
+    @staticmethod
     def printProgress(self, i):
         os.system("cls")
         print("-"*102)
         print("|" + "/"*i + " "*(100-i) + "|" + f" {i}%")
         print("-"*102)
-        
+    
+    @staticmethod
     def getResult(self, tot, its):
         print("-"*102)
         print(" "*20 + "Total iterations " + "|" + f"{its}" + "|" + " "*10 + "Average time taken " + "|" + f"{round((1000*tot/its), 5)}" + "ms|")
