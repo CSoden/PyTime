@@ -1,0 +1,4 @@
+Metadata-Version: 2.1
+Name: pytime
+Version: 0.1
+Summary: Rudamentary way of calculating the average time take to execute a funciton in Python

@@ -1,7 +1,7 @@
 from setuptools import setup
 
-set(name="pytime",
+setup(name="pytime",
     version="0.1",
     description="Rudamentary way of calculating the average time take to execute a funciton in Python",
-    packages=["pytime.py"],
+    packages=["pytime"],
     zip_safe=False)
